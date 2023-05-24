@@ -129,31 +129,21 @@ $(document).ready(function () {
     $("#scrollTop").height(winHeight + winAbout);
   });
 
-  let statusAbout = true;
-  var aboutElement = document.getElementById('about');
-
-  if (aboutElement) {
-    var observer = new IntersectionObserver(function (entries) {
-      if (entries[0].intersectionRatio <= 0) {
-        statusAbout = false;
-      } else {
-        statusAbout = true;
-      }
-    });
-    observer.observe(aboutElement);
-  }
-
   $(window).on("scroll", function () {
+    var elemOffsetTop = $("#about").offset().top;
+    var elemHeight = document.getElementById('about').offsetHeight;
+    var elemAbout = elemOffsetTop + elemHeight;
     let num = $(window).scrollTop() - winAbout;
-
     if (num <= 0) {
       num = 0;
     }
     $("#scrollContent").css("transform", "translate(0px, 0px)");
-    if (statusAbout == false) {
+    if (document.documentElement.scrollTop > elemAbout || document.documentElement.scrollTop > elemAbout) {
       $("#scrollContent").css('transform', 'translate3d(0px,' + num + 'px, 0px)');
     }
+
   });
+
 
   // function show item down up
   if (!!window.IntersectionObserver) {
