@@ -1,0 +1,168 @@
+/* Scss Document */
+$breakpoints: (
+  'sm': 'print,screen and (max-width: 767px)',
+) !default;
+@mixin mq($breakpoint: sm) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+.p-chatbtn {
+  display: none;
+  position: fixed;
+  width: 174px;
+  opacity: 0;
+  z-index: 2;
+  right: 1px;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 5px 1px;
+  line-height: 0;
+  border-radius: 5px;
+  &.is {
+    &-active {
+      opacity: 1;
+    }
+  }
+  &_body {
+    display: inline-block;
+    z-index: 5;
+    &:hover {
+      opacity: .7;
+      @include mq() { 
+        opacity: 1;        
+      }
+    }
+    img {
+      width: 174px;
+    }
+  }
+  &_close {
+    position: absolute;
+    width: 29px;
+    top: -25px;
+    right: 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 2px 0px 5px 1px;
+    &:hover {
+      opacity: .7;
+      cursor: pointer;
+      @include mq() { 
+        opacity: 1;        
+      }
+    }
+  }
+}
+
+.p-chatbtn02 {
+  display: none;
+  position: fixed;
+  width: 200px;
+  opacity: 0;
+  z-index: 2;
+  right: 19px;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 5px 1px;
+  line-height: 0;
+  border-radius: 5px;
+  &.is {
+    &-active {
+      opacity: 1;
+    }
+  }
+  &_body {
+    position: relative;
+    display: inline-block;
+    z-index: 5;
+    &::before {
+      content: "";
+      position: absolute;
+      background: url(/common/img/btn/chat02_top.png)no-repeat;
+      top: 0;
+      right: 0;
+      width: 215px;
+      height: 42px;
+    }
+  }
+  &_open {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 184px;
+    height: 36px;
+    margin-left: -92px;
+    background: #fff;
+    border-radius: 50px;
+  }
+  &_openimg {
+    width: 184px;
+    height: 36px;
+    transition: opacity .3s;
+    &:hover {
+      opacity: .7;
+      @include mq() {
+        opacity: 1;
+      }
+    }
+  }
+  &_close {
+    position: absolute;
+    width: 25px;
+    top: -25px;
+    right: 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 2px 0px 5px 1px;
+    &:hover {
+      opacity: .7;
+      cursor: pointer;
+      @include mq() {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.p-chatbtn03 {
+  display: none;
+  position: fixed;
+  width: 170px;
+  opacity: 0;
+  z-index: 2;
+  right: 1px;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 5px 1px;
+  line-height: 0;
+  border-radius: 5px;
+  &.is {
+    &-active {
+      opacity: 1;
+    }
+  }
+  &_body {
+    display: inline-block;
+    z-index: 5;
+    &:hover {
+      opacity: .7;
+      @include mq() { 
+        opacity: 1;        
+      }
+    }
+    img {
+      width: 170px;
+    }
+  }
+  &_close {
+    position: absolute;
+    width: 25px;
+    top: -25px;
+    right: 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 2px 0px 5px 1px;
+    &:hover {
+      opacity: .7;
+      cursor: pointer;
+      @include mq() { 
+        opacity: 1;        
+      }
+    }
+  }
+}

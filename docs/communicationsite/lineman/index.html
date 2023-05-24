@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <meta property="og:image" content="https://www.chuden.co.jp/common/img/ogp_image.png">
+  <title>ラインマン - コミュニケーションサイト｜中部電力パワーグリッド</title>
+  <!-- js -->
+  <script src="../../common/js/jquery-3.4.1.min.js"></script>
+  <script src="../../communicationsite/common/js/snap.svg-min.js"></script>
+  <script src="../../communicationsite/common/js/ofi.min.js"></script>
+  <script src="../../common/js/global.js"></script>
+  <script type="text/javascript" charset="UTF-8"
+    src="https://ssl-cache.stream.ne.jp/www50/eqa429xarj/jmc_pub/jmc_swf/player/t3/if.js"></script>
+  <script src="../../communicationsite/common/js/brand.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="../../common/css/global.css">
+  <link rel="stylesheet" href="../../common/css/common.css">
+  <link rel="stylesheet" href="../../communicationsite/common/css/brand.css">
+  <link rel="stylesheet" href="../../communicationsite/common/css/lineman.css">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <!-- ICON -->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+  <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../common/icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../../common/icon/android-chrome-192x192.png">
+  <link rel="mask-icon" href="../../common/icon/safari-pinned-tab.svg" color="#fff" />
+  <link rel="manifest" href="../../common/icon/manifest.webmanifest">
+  <link rel="stylesheet" href="../../common/css/chatbtn.css">
+  <!-- /ICON -->
+</head>
+
+<body>
+
+  <!-- SPメニュー用 -->
+  <div class="overlay"></div>
+
+  <div class="p-scroll__top" id="scrollTop">
+
+    <div class="p-lineman__about" id="about">
+      <div class="l-container p-lineman__about--container">
+        <img class="p-lineman__about--logo" src="../../communicationsite/common/img/lineman/lineman-logo-01.png"
+          alt="logo lineman">
+        <div class="p-lineman__about--titles">
+          <div class="p-lineman__about--titlesItem">
+            <p>建てて</p>
+            <img src="../../communicationsite/common/img/lineman/img-land-man01.svg" alt="建てて">
+          </div>
+          <div class="p-lineman__about--titlesItem">
+            <p>繋げて</p>
+            <img src="../../communicationsite/common/img/lineman/img-role02.svg" alt="繋げて">
+          </div>
+          <div class="p-lineman__about--titlesItem">
+            <p>届けて</p>
+            <img src="../../communicationsite/common/img/lineman/img-role03.svg" alt="届けて">
+          </div>
+          <div class="p-lineman__about--titlesItem">
+            <p>守る</p>
+            <img src="../../communicationsite/common/img/lineman/img-role04.svg" alt="守る">
+          </div>
+        </div>
+        <div class="p-lineman__about--title">
+          このまちが好きだから<br>
+          明日を照らす<br class="u-only__sp">
+          ラインマンになる
+        </div>
+
+        <div class="p-lineman__about--intro">
+          いつもどおりに電気が使える、<br class="u-only__sp">
+          快適で便利な毎日は、<br>
+          大空にのびる送電線とつながっています。<br>
+          まちに明かりをともすために、<br>
+          空を通る電気の道をつくり、<br class="u-only__sp">
+          守り続けるプロフェッショナル。<br>
+          ラインマンの技能と誇りが、<br class="u-only__sp">
+          あたりまえの日々を支えています。<br>
+          ここでは、そんなラインマンの仕事を紹介します。
+        </div>
+
+      </div>
+      <div class="p-lineman__about--icon">
+        <img src="../../communicationsite/common/img/lineman/img-about-01.svg" alt="man about">
+      </div>
+      <div class="p-lineman__scroll">
+        SCROLL
+        <div class="p-lineman__scroll--line"></div>
+      </div>
+
+      <div class="p-bg__star">
+        <div class="p-bg__star--inner">
+          <span class="p-bg__star--item star01"></span>
+          <span class="p-bg__star--item star02"></span>
+          <span class="p-bg__star--item star03"></span>
+          <span class="p-bg__star--item star04"></span>
+          <span class="p-bg__star--item star05"></span>
+          <span class="p-bg__star--item star06"></span>
+          <span class="p-bg__star--item star07"></span>
+          <span class="p-bg__star--item star08"></span>
+          <span class="p-bg__star--item star09"></span>
+        </div>
+        <div class="p-bg__star--inner">
+          <span class="p-bg__star--item star01"></span>
+          <span class="p-bg__star--item star02"></span>
+          <span class="p-bg__star--item star03"></span>
+          <span class="p-bg__star--item star04"></span>
+          <span class="p-bg__star--item star05"></span>
+          <span class="p-bg__star--item star06"></span>
+          <span class="p-bg__star--item star07"></span>
+          <span class="p-bg__star--item star08"></span>
+          <span class="p-bg__star--item star09"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-lineman__nav js-lineman__nav">
+      <div class="p-lineman__nav--btn top js-nav__btn">
+        <img src="../../communicationsite/common/img/lineman/icon-arrow-left-01.svg" alt="icon arrow">
+      </div>
+      <div class="p-lineman__nav--btn bottom js-nav__btn">
+        <img src="../../communicationsite/common/img/lineman/icon-arrow-left-01.svg" alt="icon arrow">
+      </div>
+      <div class="p-lineman__nav--text">
+        <p>TETTOU</p>
+        <p>CLIMB</p>
+        <p>METER</p>
+      </div>
+      <div class="p-lineman__nav--inner">
+        <img src="../../communicationsite/common/img/lineman/img-nav.svg" alt="img bg nav">
+        <ul class="p-lineman__nav--list">
+          <li class="p-lineman__nav--item"><a href="#top" class="p-lineman__nav--link js-nav__link top">頂上到着</a>
+          </li>
+          <li class="p-lineman__nav--item"><a href="#little"
+              class="p-lineman__nav--link js-nav__link little">あと少し</a></li>
+          </li>
+          <li class="p-lineman__nav--item"><a href="#mainten"
+              class="p-lineman__nav--link js-nav__link mainten">保守・点検</a></li>
+          <li class="p-lineman__nav--item"><a href="#overhead"
+              class="p-lineman__nav--link js-nav__link overhead">架線工事完成！</a></li>
+          <li class="p-lineman__nav--item"><a href="#assembly"
+              class="p-lineman__nav--link js-nav__link assembly">組立工事完成！</a></li>
+          <li class="p-lineman__nav--item"><a href="#survey"
+              class="p-lineman__nav--link js-nav__link survey is-active">調査・測量/ <br> 仮設・基礎工事完成！</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="scrollContent" class="p-scroll__content">
+
+      <!-- ヘッダー -->
+      <header class="l-header u-of--hidden" id="js-header">
+        <div class="l-header__main">
+          <div class="l-header-top border-none">
+            <div class="l-header-logo">
+              <a class="l-header-logo__link" href="/" target="_blank">
+                <img class="l-header-logo__link--img" src="../../common/img/header/logo_06.svg" alt="中部電力パワーグリッド">
+                <div class="l-header-logo__link--slash"></div>
+                <p class="l-header-logo__link--text">送配電・託送</p>
+              </a>
+            </div>
+            <div class="sp-header__menu-wrap u-dn-md">
+              <div class="sp-header__menu btn-close">
+                <div class="sp-header__btn">
+                  <span class="sp-header__btn-line"></span>
+                  <span class="sp-header__btn-line"></span>
+                  <span class="sp-header__btn-line"></span>
+                  <span class="sp-header__btn-line"></span>
+                  <p class="sp-header__btn-text">MENU</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="l-brand-header-link__wrapper">
+            <ul class="l-brand-header-link">
+              <li class="l-brand-header-link__item"><a href="../../communicationsite/promise/">PROMISE</a></li>
+              <li class="l-brand-header-link__item"><a href="../../communicationsite/domain/">DOMAIN</a></li>
+              <li class="l-brand-header-link__item"><a href="../../communicationsite/service/">SERVICE</a></li>
+              <li class="l-brand-header-link__item"><a href="../../communicationsite/number/">DATA</a></li>
+              <!-- <li class="l-brand-header-link__item"><a href="NotSet">PGの人々</a></li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="l-group-header">
+          <div class="l-group-header__inner spheader-group">
+            <div class="group_logo--sp">
+              <figure class="group_logo--sp--left">
+                <img src="../../common/img/header/logo_01.svg" alt="むすぶ、ひらく。">
+              </figure>
+              <figure class="group_logo--sp--right">
+                <img src="../../common/img/header/logo_02.svg" alt="CHUBU Electric Power">
+              </figure>
+            </div>
+            <nav class="l-group-header__nav">
+              <ul class="l-group-header__nav--list--sp">
+                <li class="l-group-header__nav--item">
+                  <a class="l-group-header__nav--item__link" href="https://powergrid.chuden.co.jp/" target="_blank">
+                    <p class="l-group-header__nav--item__link--text">送配電・託送</p>
+                    <figure class="l-group-header__nav--item__link--title"><img src="../../common/img/header/logo_03.svg"
+                        alt="中部電力パワーグリッド"></figure>
+                  </a>
+                </li>
+              </ul>
+              <ul class="l-group-header__nav-list--pc">
+                <li class="l-group-header__nav--item">
+                  <a class="l-group-header__nav--item__link" href="https://www.chuden.co.jp/" target="_blank">
+                    <p class="l-group-header__nav--item__link--text">持株会社</p>
+                    <figure class="l-group-header__nav--item__link--title"><img src="../../common/img/header/logo_04.svg"
+                        alt="中部電力" data-name="chubu"></figure>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="group_logo">
+              <img src="../../common/img/g-header/group_logo.png" alt="むすぶ、ひらく。中部電力グループ" width="333">
+            </div>
+          </div>
+
+        </div>
+      </header>
+      <!-- ヘッダーここまで -->
+
+      <!-- コンテンツ領域 -->
+      <div class="wrapper">
+        <main class="l-main">
+
+          <section class="p-lineman__mv" id="top">
+            <div class="p-lineman__mv--bg">
+              <img src="../../communicationsite/common/img/lineman/lineman-logo-01.png" alt="">
+            </div>
+            <h1 class="p-lineman__mv--title">
+              この光の数は、<br>
+              私たちが守っている<br class="u-only__sp">
+              「日常」の数
+            </h1>
+            <div class="p-lineman__line--img">
+              <img class="p-lineman__line--man" src="../../communicationsite/common/img/lineman/img-lineman-top03.svg"
+                alt="img bg lineman man">
+              <img class="p-lineman__line--bg" src="../../communicationsite/common/img/lineman/img-lineman-top02.png"
+                alt="img bg lineman sky">
+            </div>
+            <div class="p-bg__star">
+              <div class="p-bg__star--inner">
+                <span class="p-bg__star--item star01"></span>
+                <span class="p-bg__star--item star02"></span>
+                <span class="p-bg__star--item star03"></span>
+                <span class="p-bg__star--item star04"></span>
+                <span class="p-bg__star--item star05"></span>
+                <span class="p-bg__star--item star06"></span>
+                <span class="p-bg__star--item star07"></span>
+                <span class="p-bg__star--item star08"></span>
+                <span class="p-bg__star--item star09"></span>
+              </div>
+              <div class="p-bg__star--inner p-lineman__star02">
+                <span class="p-bg__star--item star01"></span>
+                <span class="p-bg__star--item star02"></span>
+                <span class="p-bg__star--item star03"></span>
+                <span class="p-bg__star--item star04"></span>
+                <span class="p-bg__star--item star05"></span>
+                <span class="p-bg__star--item star06"></span>
+                <span class="p-bg__star--item star07"></span>
+                <span class="p-bg__star--item star08"></span>
+                <span class="p-bg__star--item star09"></span>
+              </div>
+            </div>
+          </section>
+
+          <div class="p-lineman__bg--body">
+
+            <div id="js-little" class="p-lineman__little"></div>
+
+            <div class="p-bg__star">
+              <div class="p-bg__star--inner">
+                <span class="p-bg__star--item star01"></span>
+                <span class="p-bg__star--item star02"></span>
+                <span class="p-bg__star--item star03"></span>
+                <span class="p-bg__star--item star04"></span>
+                <span class="p-bg__star--item star05"></span>
+                <span class="p-bg__star--item star06"></span>
+                <span class="p-bg__star--item star07"></span>
+                <span class="p-bg__star--item star08"></span>
+                <span class="p-bg__star--item star09"></span>
+              </div>
+              <div class="p-bg__star--inner">
+                <span class="p-bg__star--item star01"></span>
+                <span class="p-bg__star--item star02"></span>
+                <span class="p-bg__star--item star03"></span>
+                <span class="p-bg__star--item star04"></span>
+                <span class="p-bg__star--item star05"></span>
+                <span class="p-bg__star--item star06"></span>
+                <span class="p-bg__star--item star07"></span>
+                <span class="p-bg__star--item star08"></span>
+                <span class="p-bg__star--item star09"></span>
+              </div>
+              <div class="p-bg__star--inner">
+                <span class="p-bg__star--item star01"></span>
+                <span class="p-bg__star--item star02"></span>
+                <span class="p-bg__star--item star03"></span>
+                <span class="p-bg__star--item star04"></span>
+                <span class="p-bg__star--item star05"></span>
+                <span class="p-bg__star--item star06"></span>
+                <span class="p-bg__star--item star07"></span>
+                <span class="p-bg__star--item star08"></span>
+                <span class="p-bg__star--item star09"></span>
+              </div>
+              <div class="p-bg__star--inner">
+                <span class="p-bg__star--item star01"></span>
+                <span class="p-bg__star--item star02"></span>
+                <span class="p-bg__star--item star03"></span>
+                <span class="p-bg__star--item star04"></span>
+                <span class="p-bg__star--item star05"></span>
+                <span class="p-bg__star--item star06"></span>
+                <span class="p-bg__star--item star07"></span>
+                <span class="p-bg__star--item star08"></span>
+                <span class="p-bg__star--item star09"></span>
+              </div>
+              <div class="p-bg__star--inner">
+                <span class="p-bg__star--item star01"></span>
+                <span class="p-bg__star--item star02"></span>
+                <span class="p-bg__star--item star03"></span>
+                <span class="p-bg__star--item star04"></span>
+                <span class="p-bg__star--item star05"></span>
+                <span class="p-bg__star--item star06"></span>
+                <span class="p-bg__star--item star07"></span>
+                <span class="p-bg__star--item star08"></span>
+                <span class="p-bg__star--item star09"></span>
+              </div>
+              <div class="p-bg__star--inner">
+                <span class="p-bg__star--item star01"></span>
+                <span class="p-bg__star--item star02"></span>
+                <span class="p-bg__star--item star03"></span>
+                <span class="p-bg__star--item star04"></span>
+                <span class="p-bg__star--item star05"></span>
+                <span class="p-bg__star--item star06"></span>
+                <span class="p-bg__star--item star07"></span>
+                <span class="p-bg__star--item star08"></span>
+                <span class="p-bg__star--item star09"></span>
+              </div>
+              <div class="p-bg__star--inner">
+                <span class="p-bg__star--item star01"></span>
+                <span class="p-bg__star--item star02"></span>
+                <span class="p-bg__star--item star03"></span>
+                <span class="p-bg__star--item star04"></span>
+                <span class="p-bg__star--item star05"></span>
+                <span class="p-bg__star--item star06"></span>
+                <span class="p-bg__star--item star07"></span>
+                <span class="p-bg__star--item star08"></span>
+                <span class="p-bg__star--item star09"></span>
+              </div>
+              <div class="p-bg__star--inner">
+                <span class="p-bg__star--item star01"></span>
+                <span class="p-bg__star--item star02"></span>
+                <span class="p-bg__star--item star03"></span>
+                <span class="p-bg__star--item star04"></span>
+                <span class="p-bg__star--item star05"></span>
+                <span class="p-bg__star--item star06"></span>
+                <span class="p-bg__star--item star07"></span>
+                <span class="p-bg__star--item star08"></span>
+                <span class="p-bg__star--item star09"></span>
+              </div>
+              <div class="p-bg__star--inner">
+                <span class="p-bg__star--item star01"></span>
+                <span class="p-bg__star--item star02"></span>
+                <span class="p-bg__star--item star03"></span>
+                <span class="p-bg__star--item star04"></span>
+                <span class="p-bg__star--item star05"></span>
+                <span class="p-bg__star--item star06"></span>
+                <span class="p-bg__star--item star07"></span>
+                <span class="p-bg__star--item star08"></span>
+                <span class="p-bg__star--item star09"></span>
+              </div>
+              <div class="p-bg__star--inner">
+                <span class="p-bg__star--item star01"></span>
+                <span class="p-bg__star--item star02"></span>
+                <span class="p-bg__star--item star03"></span>
+                <span class="p-bg__star--item star04"></span>
+                <span class="p-bg__star--item star05"></span>
+                <span class="p-bg__star--item star06"></span>
+                <span class="p-bg__star--item star07"></span>
+                <span class="p-bg__star--item star08"></span>
+                <span class="p-bg__star--item star09"></span>
+              </div>
+              <div class="p-bg__star--inner">
+                <span class="p-bg__star--item star01"></span>
+                <span class="p-bg__star--item star02"></span>
+                <span class="p-bg__star--item star03"></span>
+                <span class="p-bg__star--item star04"></span>
+                <span class="p-bg__star--item star05"></span>
+                <span class="p-bg__star--item star06"></span>
+                <span class="p-bg__star--item star07"></span>
+                <span class="p-bg__star--item star08"></span>
+                <span class="p-bg__star--item star09"></span>
+              </div>
+              <div class="p-bg__star--inner">
+                <span class="p-bg__star--item star01"></span>
+                <span class="p-bg__star--item star02"></span>
+                <span class="p-bg__star--item star03"></span>
+                <span class="p-bg__star--item star04"></span>
+                <span class="p-bg__star--item star05"></span>
+                <span class="p-bg__star--item star06"></span>
+                <span class="p-bg__star--item star07"></span>
+                <span class="p-bg__star--item star08"></span>
+                <span class="p-bg__star--item star09"></span>
+              </div>
+              <div class="p-bg__star--inner">
+                <span class="p-bg__star--item star01"></span>
+                <span class="p-bg__star--item star02"></span>
+                <span class="p-bg__star--item star03"></span>
+                <span class="p-bg__star--item star04"></span>
+                <span class="p-bg__star--item star05"></span>
+                <span class="p-bg__star--item star06"></span>
+                <span class="p-bg__star--item star07"></span>
+                <span class="p-bg__star--item star08"></span>
+                <span class="p-bg__star--item star09"></span>
+              </div>
+              <div class="p-bg__star--inner">
+                <span class="p-bg__star--item star01"></span>
+                <span class="p-bg__star--item star02"></span>
+                <span class="p-bg__star--item star03"></span>
+                <span class="p-bg__star--item star04"></span>
+                <span class="p-bg__star--item star05"></span>
+                <span class="p-bg__star--item star06"></span>
+                <span class="p-bg__star--item star07"></span>
+                <span class="p-bg__star--item star08"></span>
+                <span class="p-bg__star--item star09"></span>
+              </div>
+              <div class="p-bg__star--inner">
+                <span class="p-bg__star--item star01"></span>
+                <span class="p-bg__star--item star02"></span>
+                <span class="p-bg__star--item star03"></span>
+                <span class="p-bg__star--item star04"></span>
+                <span class="p-bg__star--item star05"></span>
+                <span class="p-bg__star--item star06"></span>
+                <span class="p-bg__star--item star07"></span>
+                <span class="p-bg__star--item star08"></span>
+                <span class="p-bg__star--item star09"></span>
+              </div>
+              <div class="p-bg__star--inner">
+                <span class="p-bg__star--item star01"></span>
+                <span class="p-bg__star--item star02"></span>
+                <span class="p-bg__star--item star03"></span>
+                <span class="p-bg__star--item star04"></span>
+                <span class="p-bg__star--item star05"></span>
+                <span class="p-bg__star--item star06"></span>
+                <span class="p-bg__star--item star07"></span>
+                <span class="p-bg__star--item star08"></span>
+                <span class="p-bg__star--item star09"></span>
+              </div>
+              <div class="p-bg__star--inner">
+                <span class="p-bg__star--item star01"></span>
+                <span class="p-bg__star--item star02"></span>
+                <span class="p-bg__star--item star03"></span>
+                <span class="p-bg__star--item star04"></span>
+                <span class="p-bg__star--item star05"></span>
+                <span class="p-bg__star--item star06"></span>
+                <span class="p-bg__star--item star07"></span>
+                <span class="p-bg__star--item star08"></span>
+                <span class="p-bg__star--item star09"></span>
+              </div>
+              <div class="p-bg__star--inner">
+                <span class="p-bg__star--item star01"></span>
+                <span class="p-bg__star--item star02"></span>
+                <span class="p-bg__star--item star03"></span>
+                <span class="p-bg__star--item star04"></span>
+                <span class="p-bg__star--item star05"></span>
+                <span class="p-bg__star--item star06"></span>
+                <span class="p-bg__star--item star07"></span>
+                <span class="p-bg__star--item star08"></span>
+                <span class="p-bg__star--item star09"></span>
+              </div>
+              <div class="p-bg__star--inner">
+                <span class="p-bg__star--item star01"></span>
+                <span class="p-bg__star--item star02"></span>
+                <span class="p-bg__star--item star03"></span>
+                <span class="p-bg__star--item star04"></span>
+                <span class="p-bg__star--item star05"></span>
+                <span class="p-bg__star--item star06"></span>
+                <span class="p-bg__star--item star07"></span>
+                <span class="p-bg__star--item star08"></span>
+                <span class="p-bg__star--item star09"></span>
+              </div>
+            </div>
+
+            <div class="p-lineman__bg--land">
+              <img src="../../communicationsite/common/img/lineman/img-bg-land01.png" alt="img bg land">
+            </div>
+            <div class="p-lineman__bg--tower"></div>
+
+            <section class="p-lineman__mainten" id="js-mainten">
+              <div class="l-container02">
+
+                <div class="p-lineman__mainten--img">
+                  <div class="p-lineman__mainten--img01 c-inv">
+                    <img src="../../communicationsite/common/img/lineman/img-mainten-01.jpg" alt="保守・点検">
+                  </div>
+                  <div class="p-lineman__mainten--img02 c-inv">
+                    <img src="../../communicationsite/common/img/lineman/img-mainten-02.png" alt="保守・点検">
+                  </div>
+                  <div class="p-lineman__mainten--img03 c-inv">
+                    <img src="../../communicationsite/common/img/lineman/img-mainten-03.png" alt="保守・点検">
+                  </div>
+                </div>
+
+                <div class="p-lineman__inner p-lineman__mainten--inner">
+                  <div class="p-lineman__mainten--icon">
+                    <img class="p-lineman__mainten--iconStar"
+                      src="../../communicationsite/common/img/lineman/icon-star-03.svg" alt="icon star 02">
+                    <img class="p-lineman__mainten--iconStar start02"
+                      src="../../communicationsite/common/img/lineman/icon-star-02.svg" alt="icon star 02">
+                  </div>
+                  <div class="p-lineman__innerImg  c-inv">
+                    <img src="../../communicationsite/common/img/lineman/img-mainten-04.svg" alt="LINE MAN WORK 04">
+                  </div>
+                  <div class="p-lineman__content" id="mainten">
+                    <p class="p-lineman__intro  c-inv">LINE MAN WORK 04</p>
+                    <h2 class="p-lineman__title02  c-inv">保守・点検</h2>
+                    <p class="p-lineman__des  c-inv">
+                      電気が使えるというあたり前を守り続けるため、<br>
+                      日々、設備の保守・点検を行っています。 <br>
+                      また、災害などにより設備が故障した場合は、<br class="u-only__sp">
+                      少しでも早く電気をお届けするため、<br>
+                      関係者一丸となって、<br class="u-only__sp">
+                      全力で復旧に取り組みます。
+                    </p>
+                    <a href="../../communicationsite/lineman/work04/"
+                      class="u-btn__yellow01 p-lineman__link01 p-lineman__mainten--link  c-inv">
+                      詳しくみる
+                      <img src="../../communicationsite/common/img/lineman/icon-arrow-right-01.svg" alt="icon arrow right">
+                    </a>
+                  </div>
+                  <div class="p-lineman__banner  c-inv">
+                    <picture class="p-lineman__banner--bg">
+                      <source media="(max-width: 767px)"
+                        srcset="../../communicationsite/common/img/lineman/img-mainten-05-sp.png">
+                      <img src="../../communicationsite/common/img/lineman/img-mainten-05.png" alt="img bg 保守・点検">
+                    </picture>
+                    <div class="p-lineman__banner--content">
+                      <div class="p-lineman__banner--title">
+                        <p>保守・点検</p>
+                      </div>
+                      <picture>
+                        <source media="(max-width: 767px)"
+                          srcset="../../communicationsite/common/img/lineman/img-mainten-06-sp.svg">
+                        <img src="../../communicationsite/common/img/lineman/img-mainten-06.svg" alt="img 保守・点検">
+                      </picture>
+                    </div>
+                    <p class="p-lineman__banner--intro left">LINE MAN WORK 04</p>
+                    <p class="p-lineman__banner--intro right">LINE MAN WORK 04</p>
+
+                  </div>
+                </div>
+
+              </div>
+            </section>
+
+            <section class="p-lineman__overhead" id="js-overhead">
+              <div class="p-lineman__climb">
+                <p class="p-lineman__climb--text">climb to the top</p>
+              </div>
+              <div class="l-container02 u-postion__rel">
+
+                <div class="p-lineman__overhead--img">
+
+                  <div class="p-lineman__cloud w-100 p-lineman__overhead--cloud01">
+                    <img src="../../communicationsite/common/img/lineman/img-cloud-01.png" alt="img cloud">
+                  </div>
+                  <div class="p-lineman__cloud w-100 rotate p-lineman__overhead--cloud02">
+                    <img src="../../communicationsite/common/img/lineman/img-cloud-01.png" alt="img cloud">
+                  </div>
+                  <div class="p-lineman__cloud left p-lineman__overhead--cloud03">
+                    <img src="../../communicationsite/common/img/lineman/img-cloud-02.png" alt="img cloud">
+                  </div>
+                  <div class="p-lineman__cloud right rotate p-lineman__overhead--cloud04">
+                    <img src="../../communicationsite/common/img/lineman/img-cloud-02.png" alt="img cloud">
+                  </div>
+
+                  <div class="p-lineman__overhead--img01 c-inv">
+                    <img src="../../communicationsite/common/img/lineman/img-overhead-01.png" alt="架線工事">
+                  </div>
+                  <div class="p-lineman__overhead--img02 c-inv">
+                    <img src="../../communicationsite/common/img/lineman/img-overhead-02.png" alt="架線工事">
+                  </div>
+                  <div class="p-lineman__overhead--img03 c-inv">
+                    <img src="../../communicationsite/common/img/lineman/img-overhead-03.png" alt="架線工事">
+                  </div>
+                </div>
+
+                <div class="p-lineman__inner p-lineman__overhead--inner">
+                  <div class="p-lineman__overhead--icon">
+                    <img src="../../communicationsite/common/img/lineman/img-assembly-07.svg" alt="クレーン">
+                  </div>
+                  <div class="p-lineman__innerImg c-inv">
+                    <img src="../../communicationsite/common/img/lineman/img-overhead-04.svg" alt="LINE MAN WORK 03">
+                  </div>
+                  <div class="p-lineman__content p-lineman__overhead--content" id="overhead">
+                    <p class="p-lineman__intro c-inv">LINE MAN WORK 03</p>
+                    <h2 class="p-lineman__title02 c-inv">架線工事</h2>
+                    <p class="p-lineman__des c-inv">
+                      鉄塔と鉄塔の間を電線でつなぐ。 <br>
+                      安全を最優先に現場の状況に応じて<br class="u-only__sp">
+                      効率的な方法を検討し、<br>
+                      電気の動脈である送電線を<br class="u-only__sp">
+                      はるか上空でつなぎます。
+                    </p>
+                    <a href="../../communicationsite/lineman/work03/" class="u-btn__yellow01 p-lineman__link01 c-inv">
+                      詳しくみる
+                      <img src="../../communicationsite/common/img/lineman/icon-arrow-right-01.svg" alt="icon arrow right">
+                    </a>
+                  </div>
+                  <div class="p-lineman__banner p-lineman__overhead--banner c-inv">
+                    <picture class="p-lineman__banner--bg">
+                      <source media="(max-width: 767px)"
+                        srcset="../../communicationsite/common/img/lineman/img-overhead-05-sp.jpg">
+                      <img src="../../communicationsite/common/img/lineman/img-overhead-05.jpg" alt="img bg 架線工事">
+                    </picture>
+                    <div class="p-lineman__banner--content">
+                      <div class="p-lineman__banner--title">
+                        <p>架線工事</p>
+                      </div>
+                      <picture class="p-lineman__banner--img">
+                        <img src="../../communicationsite/common/img/lineman/img-overhead-06.svg" alt="img 架線工事">
+                      </picture>
+                    </div>
+                    <p class="p-lineman__banner--intro left">LINE MAN WORK 03</p>
+                    <p class="p-lineman__banner--intro right">LINE MAN WORK 03</p>
+
+                  </div>
+                </div>
+
+              </div>
+            </section>
+
+            <section class="p-lineman__assembly" id="js-assembly">
+              <div class="p-lineman__climb p-lineman__climb02">
+                <p class="p-lineman__climb--text p-lineman__climb--text01">climb to the top</p>
+                <p class="p-lineman__climb--text p-lineman__climb--text02">climb to the top</p>
+              </div>
+              <div class="l-container02 u-postion__rel">
+
+                <div class="p-lineman__assembly--img">
+
+                  <div class="p-lineman__cloud w-100 p-lineman__assembly--cloud01">
+                    <img src="../../communicationsite/common/img/lineman/img-cloud-01.png" alt="img cloud">
+                  </div>
+
+                  <div class="p-lineman__cloud p-lineman__assembly--cloud02">
+                    <img src="../../communicationsite/common/img/lineman/img-cloud-01.png" alt="img cloud">
+                  </div>
+
+                  <div class="p-lineman__assembly--img01 c-inv">
+                    <img src="../../communicationsite/common/img/lineman/img-assembly-01.png" alt="組立工事">
+                  </div>
+                  <div class="p-lineman__assembly--img02 c-inv">
+                    <img src="../../communicationsite/common/img/lineman/img-assembly-02.png" alt="組立工事">
+                  </div>
+                  <div class="p-lineman__assembly--img03 c-inv">
+                    <img src="../../communicationsite/common/img/lineman/img-assembly-03.jpg" alt="組立工事">
+                  </div>
+                </div>
+
+                <div class="p-lineman__inner p-lineman__assembly--inner">
+                  <div class="p-lineman__assembly--icon c-inv">
+                    <img src="../../communicationsite/common/img/lineman/img-assembly-07.svg" alt="クレーン">
+                  </div>
+                  <div class="p-lineman__innerImg c-inv">
+                    <img src="../../communicationsite/common/img/lineman/img-assembly-04.svg" alt="LINE MAN WORK 02">
+                  </div>
+                  <div class="p-lineman__content p-lineman__assembly--content" id="assembly">
+                    <p class="p-lineman__intro c-inv">LINE MAN WORK 02</p>
+                    <h2 class="p-lineman__title02 c-inv">組立工事</h2>
+                    <p class="p-lineman__des c-inv">
+                      部材と部材をピタリと合わせて、<br class="u-only__sp">
+                      鉄塔を組み上げていきます。 <br>
+                      場所に合わせて最適な工法を選び、<br class="u-only__sp">
+                      大型クレーンを使って、 <br>
+                      100メートル超えの巨大な鉄塔を<br class="u-only__sp">
+                      組み上げることも。
+                    </p>
+                    <a href="../../communicationsite/lineman/work02/"
+                      class="u-btn__yellow01 p-lineman__link01 p-lineman__assembly--link c-inv">
+                      詳しくみる
+                      <img src="../../communicationsite/common/img/lineman/icon-arrow-right-01.svg" alt="icon arrow right">
+                    </a>
+                  </div>
+                  <div class="p-lineman__banner p-lineman__assembly--banner c-inv">
+                    <picture class="p-lineman__banner--bg">
+                      <source media="(max-width: 767px)"
+                        srcset="../../communicationsite/common/img/lineman/img-assembly-05-sp.png">
+                      <img src="../../communicationsite/common/img/lineman/img-assembly-05.png" alt="img bg 組立工事">
+                    </picture>
+                    <div class="p-lineman__banner--content">
+                      <div class="p-lineman__banner--title">
+                        <p>組立工事</p>
+                      </div>
+                      <picture class="p-lineman__banner--img">
+                        <img src="../../communicationsite/common/img/lineman/img-assembly-06.svg" alt="img 組立工事">
+                      </picture>
+                    </div>
+                    <p class="p-lineman__banner--intro left">LINE MAN WORK 02</p>
+                    <p class="p-lineman__banner--intro right">LINE MAN WORK 02</p>
+
+                  </div>
+                </div>
+
+                <div class="p-lineman__cloud rotate p-lineman__assembly--cloud03">
+                  <img src="../../communicationsite/common/img/lineman/img-cloud-01.png" alt="img cloud">
+                </div>
+
+                <div class="p-lineman__cloud p-lineman__assembly--cloud04">
+                  <img src="../../communicationsite/common/img/lineman/img-cloud-01.png" alt="img cloud">
+                </div>
+
+              </div>
+            </section>
+
+            <section class="p-lineman__survey" id="js-survey">
+              <div class="p-lineman__climb p-lineman__climb03">
+                <p class="p-lineman__climb--text p-lineman__climb--text03">climb to the top</p>
+                <p class="p-lineman__climb--text p-lineman__climb--text04">climb to the top</p>
+              </div>
+              <div class="l-container02 u-postion__rel">
+
+                <div class="p-lineman__survey--icon">
+                  <img src="../../communicationsite/common/img/lineman/img-survey-09.svg" alt="クレーン">
+                </div>
+
+                <div class="p-lineman__survey--img">
+
+                  <div class="p-lineman__cloud p-lineman__survey--cloud01">
+                    <img src="../../communicationsite/common/img/lineman/img-cloud-01.png" alt="img cloud">
+                  </div>
+
+                  <div class="p-lineman__survey--img01 c-inv">
+                    <img src="../../communicationsite/common/img/lineman/img-survey-01.png" alt="調査・測量仮設・基礎工事">
+                  </div>
+                  <div class="p-lineman__survey--img02 c-inv">
+                    <img src="../../communicationsite/common/img/lineman/img-survey-02.jpg" alt="調査・測量仮設・基礎工事">
+                  </div>
+                  <div class="p-lineman__survey--img03 c-inv">
+                    <img src="../../communicationsite/common/img/lineman/img-survey-03.png" alt="調査・測量仮設・基礎工事">
+                  </div>
+                  <div class="p-lineman__survey--img04 c-inv">
+                    <img src="../../communicationsite/common/img/lineman/img-survey-04.png" alt="調査・測量仮設・基礎工事">
+                  </div>
+                  <div class="p-lineman__survey--img05 c-inv">
+                    <img src="../../communicationsite/common/img/lineman/img-survey-05.png" alt="調査・測量仮設・基礎工事">
+                  </div>
+                </div>
+
+                <div class="p-lineman__inner p-lineman__survey--inner">
+                  <div class="p-lineman__innerImg c-inv">
+                    <img src="../../communicationsite/common/img/lineman/img-survey-06.svg" alt="LINE MAN WORK 01">
+                  </div>
+                  <div class="p-lineman__content p-lineman__survey--content" id="survey">
+                    <p class="p-lineman__intro c-inv">LINE MAN WORK 01</p>
+                    <h2 class="p-lineman__title02 c-inv">調査・測量<br>仮設・基礎工事</h2>
+                    <p class="p-lineman__des p-lineman__survey--des c-inv">
+                      工事現場の調査・測量を行った後、<br>
+                      その結果を基に、資材を運ぶ仮設道路を造り、<br>
+                      鉄塔を支える頑丈な基礎を、<br class="u-only__sp">
+                      大地を相手に築きあげます。<br>
+                      そして重機を使いこなし、<br>
+                      台風や地震などの災害でも倒れないよう、<br>
+                      鉄塔の柱を大地に固定します。
+                    </p>
+                    <a href="../../communicationsite/lineman/work01/"
+                      class="u-btn__yellow01 p-lineman__link01 p-lineman__survey--link c-inv">
+                      詳しくみる
+                      <img src="../../communicationsite/common/img/lineman/icon-arrow-right-01.svg" alt="icon arrow right">
+                    </a>
+                  </div>
+                  <div class="p-lineman__banner p-lineman__survey--banner c-inv">
+                    <picture class="p-lineman__banner--bg">
+                      <source media="(max-width: 767px)"
+                        srcset="../../communicationsite/common/img/lineman/img-survey-07-sp.jpg">
+                      <img src="../../communicationsite/common/img/lineman/img-survey-07.jpg" alt="img bg 調査・測量仮設・基礎工事">
+                    </picture>
+                    <div class="p-lineman__banner--content">
+                      <div class="p-lineman__banner--title">
+                        <p>
+                          調査・測量 <span class="p-lineman__banner--titlePc">/</span>
+                          <br class="u-only__sp">
+                          仮設・基礎工事
+                        </p>
+                      </div>
+                      <picture class="p-lineman__banner--img p-lineman__survey--bannerImg">
+                        <img src="../../communicationsite/common/img/lineman/img-survey-08.svg" alt="img 調査・測量仮設・基礎工事">
+                      </picture>
+                    </div>
+                    <p class="p-lineman__banner--intro left">LINE MAN WORK 01</p>
+                    <p class="p-lineman__banner--intro right">LINE MAN WORK 01</p>
+
+                  </div>
+                </div>
+
+              </div>
+            </section>
+
+            <div class="p-lineman__land" id="js-land">
+              <div class="p-lineman__climb p-lineman__climb04">
+                <p class="p-lineman__climb--text p-lineman__climb--text05">climb to the top</p>
+              </div>
+              <div class="l-container02 u-postion__rel">
+                <div class="p-lineman__land--man left">
+                  <img src="../../communicationsite/common/img/lineman/img-land-man01.svg" alt="img land man">
+                </div>
+                <div class="p-lineman__land--man right">
+                  <img src="../../communicationsite/common/img/lineman/img-land-man03.svg" alt="img land man">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <section class="p-lineman__role" id="js-role">
+
+            <div class="p-lineman__role--climb left">
+              <picture>
+                <source media="(max-width: 767px)" srcset="../../communicationsite/common/img/lineman/icon-climb-01-sp.svg">
+                <img src="../../communicationsite/common/img/lineman/icon-climb-01.svg" alt="icon climb">
+              </picture>
+            </div>
+            <div class="p-lineman__role--climb right">
+              <picture>
+                <source media="(max-width: 767px)" srcset="../../communicationsite/common/img/lineman/icon-climb-01-sp.svg">
+                <img src="../../communicationsite/common/img/lineman/icon-climb-01.svg" alt="icon climb">
+              </picture>
+            </div>
+
+            <div class="l-container02 u-postion__rel p-lineman__role--inner">
+              <div class="u-text__center">
+                <p class="p-lineman__intro u-text__blue02">LINE MAN’s WORK</p>
+                <h2 class="p-lineman__title02">ラインマンの役目</h2>
+              </div>
+              <div class="p-lineman__role--list">
+
+                <a href="#survey" class="p-lineman__role--item js-nav__link">
+                  <div class="p-lineman__role--icon">
+                    <img src="../../communicationsite/common/img/lineman/icon-arrow-right-01.svg" alt="incon arrow">
+                  </div>
+                  <div class="p-lineman__role--img">
+                    <img src="../../communicationsite/common/img/lineman/img-land-man01.svg" alt="基礎を築く">
+                  </div>
+                  <p class="p-lineman__role--intro">大地を相手に</p>
+                  <h3 class="p-lineman__role--title">基礎を築く</h3>
+                  <div class="p-lineman__role--des">
+                    調査・測量
+                    <span class="p-lineman__role--desPC">/</span>
+                    <br class="u-only__sp">
+                    仮設・基礎工事
+                  </div>
+                </a>
+
+                <a href="#assembly" class="p-lineman__role--item js-nav__link">
+                  <div class="p-lineman__role--icon">
+                    <img src="../../communicationsite/common/img/lineman/icon-arrow-right-01.svg" alt="incon arrow">
+                  </div>
+                  <div class="p-lineman__role--img">
+                    <img src="../../communicationsite/common/img/lineman/img-role02.svg" alt="鉄塔を建てる">
+                  </div>
+                  <p class="p-lineman__role--intro">空にそびえる</p>
+                  <h3 class="p-lineman__role--title">鉄塔を建てる</h3>
+                  <div class="p-lineman__role--des">
+                    組立工事
+                  </div>
+                </a>
+
+                <a href="#overhead" class="p-lineman__role--item js-nav__link">
+                  <div class="p-lineman__role--icon">
+                    <img src="../../communicationsite/common/img/lineman/icon-arrow-right-01.svg" alt="incon arrow">
+                  </div>
+                  <div class="p-lineman__role--img">
+                    <img src="../../communicationsite/common/img/lineman/img-role03.svg" alt="空の道をつくる">
+                  </div>
+                  <p class="p-lineman__role--intro">電線をつなぎ</p>
+                  <h3 class="p-lineman__role--title">空の道をつくる</h3>
+                  <div class="p-lineman__role--des">
+                    架線工事
+                  </div>
+                </a>
+
+                <a href="#mainten" class="p-lineman__role--item js-nav__link">
+                  <div class="p-lineman__role--icon">
+                    <img src="../../communicationsite/common/img/lineman/icon-arrow-right-01.svg" alt="incon arrow">
+                  </div>
+                  <div class="p-lineman__role--img">
+                    <img src="../../communicationsite/common/img/lineman/img-role04.svg" alt="守り続ける">
+                  </div>
+                  <p class="p-lineman__role--intro">電気が使える日常を</p>
+                  <h3 class="p-lineman__role--title">守り続ける</h3>
+                  <div class="p-lineman__role--des">
+                    保守・点検
+                  </div>
+                </a>
+
+              </div>
+
+              <div class="u-text__center p-lineman__role--more">
+                <a href="../../communicationsite/lineman/associatecompany/" class="u-btn__01">
+                  <span>
+                    ラインマンが所属する<br>
+                    協力会社一覧
+                  </span>
+                  <img src="../../communicationsite/common/img/lineman/icon-arrow-right-02.svg" alt="icon arrow right">
+                </a>
+              </div>
+
+              <div class="p-lineman__bubble">
+                <div class="p-lineman__bubble--btn js-bubble is-show">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <img src="../../communicationsite/common/img/lineman/icon-man-02.svg" alt="icon man">
+
+                <div class="p-lineman__speech js-speech">
+                  <div class="p-lineman__speech--close js-close--speech"></div>
+                  <p>2023.00.00</p>
+                  <p>
+                    ここにお知らせしたい情報が入ります<br>ここにお知らせしたい情報が入ります
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+        </main>
+      </div>
+      <!-- コンテンツ領域ここまで -->
+
+      <!-- フッター -->
+      <footer class="l-footer-wrap" data-type="nw" id="js-footer">
+        <div class="l-footer">
+          <div class="l-footer-bottom">
+            <div class="l-footer-bottom__in">
+              <span data-role="dummy_item"></span>
+              <ul class="l-footer-bottom-links">
+                <li class="l-footer-bottom-links__item"><a href="https://powergrid.chuden.co.jp/privacy/"
+                    class="l-footer-bottom-links__link" target="_blank">個人情報のお取扱いについて</a></li>
+                <li class="l-footer-bottom-links__item u-mt-0-md--down u-w-auto-md--down"><a
+                    href="https://powergrid.chuden.co.jp/siteinfo/" class="l-footer-bottom-links__link"
+                    target="_blank">ご利用のご案内</a></li>
+              </ul>
+              <!-- /l-footer-bottom-links -->
+            </div>
+            <!-- /l-footer-bottom__in -->
+          </div>
+          <!-- /l-footer-bottom -->
+        </div>
+        <div class="l-group-footer">
+          <div class="l-group-footer__in">
+            <div class="l-group-footer-logo"><a href="https://powergrid.chuden.co.jp/"
+                class="l-group-footer-logo__link effect-fade-hover" target="_blank"><img
+                  src="../../common/img/footer/logo_01.svg" alt="中部電力パワーグリッド株式会社" style="height: 100%;"></a></div>
+          </div>
+          <p class="l-group-footer-copy"><small class="l-group-footer-copy__text"> (c) Chubu Electric Power Grid
+              Co.,Inc.
+              All Rights Reserved.</small></p>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+  <!-- フッターここまで -->
+  <script src="../../common/js/jquery-3.4.1.min.js"></script>
+  <script src="../../communicationsite/common/js/slick.min.js"></script>
+  <script src="../../communicationsite/common/js/lineman.js"></script>
+  <script>
+    $(window).on('load resize', function () {
+      $('html, body').animate({ scrollTop: 0 }, 'slow');
+    });
+  </script>
+
+</body>
+
+</html>

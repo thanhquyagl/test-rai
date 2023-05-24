@@ -1,0 +1,67 @@
+/* Scss Document */
+#articleMain {
+  .p-link {
+    &__link {
+      &[href$=".csv"] {
+        &::before {
+          content: "\f6dd";
+          position: absolute;
+          top: 4px;
+          left: 2px;
+          color: #1d8326;
+          font-family: "fontawesome solid";
+        }
+      }
+      &[href$=".xlsx"], &[href$=".xls"], &[href$=".xlsm"] {
+        &::before {
+          content: "\f1c3";
+          position: absolute;
+          top: 4px;
+          left: 2px;
+          color: #116b38;
+          font-family: "fontawesome solid";
+        }
+      }
+      &[href$=".doc"], &[href$=".docx"] {
+        &::before {
+          content: "\f1c2";
+          position: absolute;
+          top: 4px;
+          left: 2px;
+          color: #2b5797;
+          font-family: "fontawesome solid";
+        }
+      }
+    }
+  }
+  img {
+    &[alt="該当なし"] {
+      vertical-align: middle;
+    }
+  }
+  & ol {
+    & ul {
+      & li {
+        &::before {
+          content: "・";
+          left: 10px;
+          width: 10px;
+        }
+      }
+    }
+  }
+}
+.l {
+  &-local {
+    &-nav {
+      &__title {
+        &__link {
+          @media only screen and (max-width: 767px) {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
