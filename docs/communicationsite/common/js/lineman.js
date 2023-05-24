@@ -123,36 +123,37 @@ $(document).ready(function () {
   });
 
   // function scroll linema
-  var winAbout = $('#about').innerHeight();
   $(window).on('load resize', function () {
     let winHeight = $('#scrollContent').innerHeight();
+    let winAbout = $('#about').innerHeight();
     $("#scrollTop").height(winHeight + winAbout);
-  });
 
-  let statusAbout = true;
-  var aboutElement = document.getElementById('about');
+    let statusAbout = true;
+    var aboutElement = document.getElementById('about');
 
-  if (aboutElement) {
-    var observer = new IntersectionObserver(function (entries) {
-      if (entries[0].intersectionRatio <= 0) {
-        statusAbout = false;
-      } else {
-        statusAbout = true;
+    if (aboutElement) {
+      var observer = new IntersectionObserver(function (entries) {
+        if (entries[0].intersectionRatio <= 0) {
+          statusAbout = false;
+        } else {
+          statusAbout = true;
+        }
+      });
+      observer.observe(aboutElement);
+    }
+
+    $(window).on("scroll", function () {
+      let num = $(window).scrollTop() - winAbout;
+      
+      if (num <= 0) {
+        num = 0; 
+      }
+      $("#scrollContent").css("transform", "translate(0px, 0px)");
+      if (statusAbout == false) {
+        // $("#scrollContent").css("bottom", $(window).scrollTop() * -1 + (winAbout + 2));
+        $("#scrollContent").css('transform', 'translate3d(0px,' + num + 'px, 0px)');
       }
     });
-    observer.observe(aboutElement);
-  }
-
-  $(window).on("scroll", function () {
-    let num = $(window).scrollTop() - winAbout;
-
-    if (num <= 0) {
-      num = 0;
-    }
-    $("#scrollContent").css("transform", "translate(0px, 0px)");
-    if (statusAbout == false) {
-      $("#scrollContent").css('transform', 'translate3d(0px,' + num + 'px, 0px)');
-    }
   });
 
   // function show item down up
